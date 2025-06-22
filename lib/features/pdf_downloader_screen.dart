@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
 import '../provider/pdf_download_provider.dart';
 
-class PdfDownloadPage extends StatelessWidget {
+class PdfDownloadPage extends StatefulWidget {
   const PdfDownloadPage({super.key});
 
+  @override
+  State<PdfDownloadPage> createState() => _PdfDownloadPageState();
+}
+
+class _PdfDownloadPageState extends State<PdfDownloadPage> {
   @override
   Widget build(BuildContext context) {
     final provider = Provider.of<PdfDownloadProvider>(context);
